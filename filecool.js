@@ -9,8 +9,6 @@ var rm = require("./rm.js");
 var commandName = process.argv[2];
 var parameters = process.argv.slice(3);
 
-console.log(parameters);
-
 
 if(commandName==="pwd")
 {
@@ -18,7 +16,7 @@ if(commandName==="pwd")
 }
 else if(commandName==="ls")
 {
-	ls(parameters[0]);
+	ls();
 }
 else if(commandName==="mkdir")
 {
@@ -27,17 +25,11 @@ else if(commandName==="mkdir")
 else if(commandName==="cat")
 {
 	cat(parameters);
-}
-else if(commandName === "cp")
-{
+}else if(commandName === "cp"){
 	cp(parameters[0],parameters[1])
-}
-else if(commandName === "rm")
-{
+}else if(commandName === "rm"){
 	rm(parameters[0]);
-}
-else if(commandName === "mv")
-{
+}else if(commandName === "mv"){
 	cp(parameters[0],parameters[1]);
 	rm(parameters[0]);
 }

@@ -1,0 +1,25 @@
+{
+  "name": "package",
+  "version": "1.0.0",
+  "description": "s",
+  "main": "bash.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/warsucks/node-bash.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/warsucks/node-bash/issues"
+  },
+  "homepage": "https://github.com/warsucks/node-bash#readme",
+  "dependencies": {
+    "chalk": "^1.1.0"
+  }
+}
