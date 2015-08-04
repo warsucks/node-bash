@@ -6,12 +6,9 @@ module.exports = function(file,location){
 		if(!err)
 		{
 			fs.writeFile(location,data,function(err){
-				if(err) throw err
+				if(err) throw err;
 			});
 		}
-		else
-		{
-			throw err;
-		}
+		else throw err;
 	});
-}
+};

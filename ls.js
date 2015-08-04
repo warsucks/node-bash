@@ -8,17 +8,14 @@ module.exports = function(parameter)
 		if(!err)
 		{
 			var color = parameter.substring(2,parameter.length).split('=')[1];
-
 			files.forEach(function(element)
 			{
 				process.stdout.write(chalk[color](element+"\t"));
 			});
 			console.log("");
 		}
-		else
-		{
-			throw err;
-		}
+		else throw err;
+
 
 	});
 }
